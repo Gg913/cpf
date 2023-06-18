@@ -59,7 +59,7 @@ def consultar_cpf(update, context):
         context.bot.send_message(chat_id=update.effective_chat.id, text="Não foi possível consultar o CPF.")
 
 def main():
-    updater = Updater(token=6177077604:AAEoBC-JNywDBVT9cHZQwDSYk3gaCLRzSKU, use_context=True)
+    updater = Updater(token="6177077604:AAEoBC-JNywDBVT9cHZQwDSYk3gaCLRzSKU", use_context=True)
     dispatcher = updater.dispatcher
 
     start_handler = CommandHandler('start', start)
